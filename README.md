@@ -1,83 +1,71 @@
-# Education NFT
-Education NFT is an educational platform that helps students, professors, institutions,  philanthropists and people to protect their intellectual ideas through a decentralized and transparent way using blockchain technology to document their journey from start to finish.
+# NFT Birthday Cards
 
-Education NFT allows people to achieve their educational dreams by
-Connecting them with the right people, investor and mentors
-Providing them with the necessary tools and resources
-Allowing Individual/Institutions to fund student projects for further education and research support
-Creates the opportunity for students to secure their projects as NFT
+### Slogan:
 
-Data gathering with IPFS, analysis and learning pathway suggestions to develop more successful people
+Turn your Birthday Cards into NFTs, digitalize your memories forever.
 
+Overview:
+NFT Birthday Cards is an app that helps you digitalize your memories forever. Join us to create, trade, and sell your Birthday Cards. NFT Birthday Card is a platform that helps you protect your important memories, moments, and wishes.
+No more birthday cards ending up in the trash. With NFT Birthday Cards you can collect Birthday Cards, create, trade, and sell them.
 
+This dapp will have a marketplace for artists to sell NFT birthday cards template. Users will be able to upload and design their own or buy a template.
 
+Find meaningful birthday cards for family and friends, spread kindness, and save them through a decentralized and transparent way using blockchain technology to document your life from start to finish.
 
+This selection of birthday ecards is completely free. That's right, free ecards birthday-style. Design and send your message on desktop, mobile, or with our free iOS app. All of our online cards come with free digital tracking tools so you can ensure your virtual birthday card arrives on time and on schedule.
 
-### How does it work?
-It's a simple process, just come up with a project/idea, start building, and get fund it. Make your dream come true and let the world discover your talent.
-Share your idea with the world:
-Share your awesome idea, project, research, or mission so others can financially support or contribute.
-Get a Non Fungible Token
-Each idea is represented as an NFT that holds your valuable work and ideas.
-Find contributors, investors, and mentors.
-Invite people, makers, mentors, and expert advisors to your project. Anyone can see ideas, but only members who purchase your idea NFT can access the community.
-Get fund it
-Offer potential funders incentives to invest in your idea.
+## How does it work?
 
+It's a simple process, just come up with a design/idea, start designing, and invite others to sign the birthday card.
 
+Share the NFT Birthday Card with that special someone:
+Share your awesome idea, design, thoughtful message, or good wishes with your loved ones.
+
+Register your NFT Birthday Card
+Each NFT Birthday Card is represented as an NFT that holds your valuable work and ideas.
+
+Find contributors, family, and friends.
+Invite people, family, friends, and even coworkers to sign up for the birthday card. Anyone can see the NFT birthday card, but only members who are invited can access the NFT.
+
+Sell your Designs and get fund it
+List your NFT template and offer potential deals for users to buy your design.
 
 ### Future
-In the future we would like to implement:
-Support students for their education by offering grants, scholarships and more.
 
+In the future we would like to implement:
+NFT Card Templates and other types of cards such us Christmas, anniversaries and more
 
 ### Why Did I use IPFS?
+
 I wanted to use IPFS to design a simple and fun app where everyone can collaborate, learn about NFTs and experience them directly.
 
 ### How it's made?
-NFT Pixels application makes use of the following software:
+
+NFT Birthday Cards application makes use of the following software:
 
 NFTStorage: the data is stored on NFTStorage IPFS, the generated hash (CID) will be used to view the details and to retrieve the NFT.
 
-- ​​ NFTPort for multi-chain NFT minting, and data transparency such as  distributing rewards and minting the NFT.
+- ​​ NFTPort for multi-chain NFT minting, and data transparency such as distributing rewards and minting the NFT.
 
--  Unlock for giving the user access to exclusive content
+- Unlock for giving the user access to exclusive content
 
+* Solidity: Solidity was used for the smart contract together with OpenZeppelin ERC721 for faster development of the smart contract
 
-- Solidity: Solidity was used for the smart contract together with OpenZeppelin ERC721 for faster development of the smart contract
+* Ganache: for local blockchain development
 
-- Ganache: for local blockchain development
+* Harmony One Network: the network I deployed the app for chepear transactions.
 
-- Polygon, Matic Network: the network I deployed the app.
+* Polygon, Matic Network: the network I deployed the app.
 
-- Frontend: React Js for the frontend, Material-UI, and Web3 to connect to the blockchain.
+* Frontend: React Js for the frontend, Material-UI, and Web3 to connect to the blockchain.
 
-# Demo
- https://6g03v5crtshs99oqku7p81cj6dmeb9cs9pqbnlbu1t1tpcnnn90vsm0.siasky.net/
-
-
-# How it's made
-NFT Pixels application makes use of the following softwares:
-
-### `NFTStorage` for data storage on IPFS that generates a transation hash used to retrive the NFT .
-
-### `Solidity` for the smart contract
-
-### `OpenZeppelin ERC721` we use the ERC721 template for a faster development of the smart contract
-
-### `Ganache` for local blockchain development
-
-### `Polygon, Matic Network` the network I deployed the app
-
-### `React Js, Material-ui, Web3` React Js for the frontend, Material-ui and Web3 to connect to blockchain.
-
-### `Unlock Protocol` to allow users to pay for exclusive content this protocol was a big part of our use case.
+* Summary: This project is made using solidity for the smart contract, ReactJs, Material-UI for the frontend, Truffle for compiler, Covalent to gather users ERC20 tokens, NFTPort for minting NFTs on the Mumbai network. IPFSto store the NFT birthday card images and metadata. Deployed on Harmony testnet for cheap fees. ENS to allow users to enter their address to receive NFTs.
 
 ## Demo
 
 Website Demo:
 
-- [Demo](https://00012ucolb73g08pag0mikd4ffjusi5a5rlmiasrar4kut09jmtp8hg.siasky.net/pet-details/bafyreiccqxygmb4ozq3eycuwuf7czsodj527xtbg26cbt3xakv7ft3ar2m)
+- [Demo](Add link here)
 
   ![Main Page]() <br> <br>
 

@@ -57,13 +57,13 @@ function App() {
       setContractData(myContract)
 
       // randomNumChainLink
-      const abiChainlink = randomNumChainLink.abi
-      const addressChainlink = randomNumChainLink.networks[networkId].address
-      const myRandom = new web3.eth.Contract(abiChainlink, addressChainlink)
-      const res = await myRandom.randomResult().call()
-      console.log('🚀 ~ file: App.js ~ line 58 ~ getContract ~ res', res)
+      // const abiChainlink = randomNumChainLink.abi
+      // const addressChainlink = randomNumChainLink.networks[networkId].address
+      // const myRandom = new web3.eth.Contract(abiChainlink, addressChainlink)
+      // const res = await myRandom.randomResult().call()
+      // console.log('🚀 ~ file: App.js ~ line 58 ~ getContract ~ res', res)
 
-      setRandomContract(myRandom)
+      // setRandomContract(myRandom)
     } else {
       window.alert(
         'Contract is not deployed to the detected network. Connect to the correct network!',
