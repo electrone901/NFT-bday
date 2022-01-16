@@ -9,6 +9,14 @@ module.exports = {
       port: 7545,
       network_id: '*', // Match any network id
     },
+    one: {
+      provider: () =>
+        new HDWalletProvider(mnemonic, 'https://api.s0.b.hmny.io'),
+      network_id: 1666700000,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+    },
     mumbai: {
       provider: () =>
         new HDWalletProvider(mnemonic, `https://rpc-mumbai.matic.today`),
