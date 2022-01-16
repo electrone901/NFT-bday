@@ -24,9 +24,12 @@ function DonateNFT() {
   const showError = () => toast.error('Oops! Some error occurred. Try again! ')
   const showSuccess = () => toast('Yay your NFT was sent successfully!')
 
-  const mintWithNFTPort = (event) => {
+  const mintWithNFTPort = async(event) => {
     event.preventDefault()
     setImage(event.target.files[0])
+    if(mintAddress[0] !== '0') {
+      setMintAddress(await window.web3.eth.ens.getAddress(mintAddress));
+    }
     if (mintAddress === '') {
       mintAddress = '0x5Df598c222C4A7e8e4AB9f347dcBd924B6458382'
     }

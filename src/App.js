@@ -15,6 +15,8 @@ import DonateNFT from './components/donate-nft/DonateNFT'
 
 import PlantswapContainer from './components/plantswap/plantswap-container/PlantswapContainer'
 
+import NftTemplates from './components/plantswap/nft-templates/NftTemplates'
+
 import NFTsListByAddress from './components/NFTsListByAddress/NFTsListByAddress'
 
 import Web3 from 'web3'
@@ -25,7 +27,6 @@ import randomNumChainLink from './abis/Random.json'
 function App() {
   const [account, setAccount] = useState('')
   const [contractData, setContractData] = useState('')
-  console.log('🚀 ~ file: App.js ~ line 28 ~ App ~ contractData', contractData)
   const [randomContract, setRandomContract] = useState('')
 
   const loadWeb3 = async () => {
@@ -56,13 +57,13 @@ function App() {
       setContractData(myContract)
 
       // randomNumChainLink
-      // const abiChainlink = randomNumChainLink.abi
-      // const addressChainlink = randomNumChainLink.networks[networkId].address
-      // const myRandom = new web3.eth.Contract(abiChainlink, addressChainlink)
-      // const res = await myRandom.randomResult().call()
-      // console.log('🚀 ~ file: App.js ~ line 58 ~ getContract ~ res', res)
+      const abiChainlink = randomNumChainLink.abi
+      const addressChainlink = randomNumChainLink.networks[networkId].address
+      const myRandom = new web3.eth.Contract(abiChainlink, addressChainlink)
+      const res = await myRandom.randomResult().call()
+      console.log('🚀 ~ file: App.js ~ line 58 ~ getContract ~ res', res)
 
-      // setRandomContract(myRandom)
+      setRandomContract(myRandom)
     } else {
       window.alert(
         'Contract is not deployed to the detected network. Connect to the correct network!',
@@ -107,6 +108,10 @@ function App() {
 
           <Route exact path="/my-collection">
             <PlantswapContainer account={account} contractData={contractData} />
+          </Route>
+
+          <Route exact path="/nft-templates">
+            <NftTemplates account={account} contractData={contractData} />
           </Route>
 
           <Route path="/card-details/:cid">

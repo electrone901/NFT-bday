@@ -271,7 +271,7 @@ function RegisterCommunity({ account, contractData }) {
               variant="contained"
               size="large"
               component={Link}
-              to="create"
+              to="/nft-templates"
               className="create-btn"
               color="primary"
             >

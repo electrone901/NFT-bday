@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './SwapList.css'
+import './NftTemplates.css'
 import {
   Typography,
   Button,
@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom'
 import { apiKey } from '../../../APIKEYS'
 import CircularStatic from '../../commons/CircularProgressWithLabel'
 
-function SwapList({ account, contractData }) {
+function NftTemplates({ account, contractData }) {
   const [loading, setLoading] = useState(false)
   const [swapsData, setSwapsData] = useState([])
   const [userHistory, setUserHistory] = useState([])
@@ -94,66 +94,14 @@ function SwapList({ account, contractData }) {
   }, [])
 
   return (
-    <div style={{ minHeight: '40vh' }}>
-      <h2>My NFTs</h2>
-      {loading ? (
-        <CircularStatic />
-      ) : (
-        <div>
-          <Grid container spacing={24}>
-            {userHistory && userHistory.length ? (
-              userHistory.map((project, index) => (
-                <Grid item md={3} spacing={1} className="swap-card">
-                  <Card sx={{ maxWidth: 245 }}>
-                    <CardMedia
-                      component="img"
-                      height="194"
-                      image={project.external_data.image}
-                      alt="Paella dish"
-                    />
-                    <CardContent>
-                      <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        className="card-header-swap"
-                      >
-                        {project.external_data.name}
-                      </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                      <IconButton aria-label="add to favorites">
-                        <FavoriteIcon />
-                      </IconButton>
-                      <IconButton aria-label="share">
-                        <ShareIcon />
-                      </IconButton>
-                      <Button
-                        variant="contained"
-                        size="small"
-                        component={Link}
-                        style={{ fontSize: '0.7125rem', marginLeft: '6.4rem' }}
-                        // to={`/collection/${pet.cid}`}
-
-                        // "/collection/wallet-address"
-                        // className="swap-msg-btn"
-                      >
-                        View
-                      </Button>
-                    </CardActions>
-                  </Card>
-                </Grid>
-              ))
-            ) : (
-              <h2>No PlantSwaps Yet...</h2>
-            )}
-          </Grid>
-        </div>
-      )}
-
-      <h2 style={{ paddingTop: '2.3rem', paddingBottom: '1rem' }}>
-        Family and friends collection
-      </h2>
-      <hr />
+    <div style={{ minHeight: '40vh', padding: '4rem', paddingTop: '2rem' }}>
+      <div style={{ marginLeft: '2rem', paddingTop: '2rem' }}>
+        <h2>Buy an NFT Template</h2>
+        <p>
+          Now is it suoer easy to create a personalized NFT Birthday Card for
+          your loves.
+        </p>
+      </div>
       {loading ? (
         <CircularStatic />
       ) : (
@@ -182,20 +130,18 @@ function SwapList({ account, contractData }) {
                       <IconButton aria-label="add to favorites">
                         <FavoriteIcon />
                       </IconButton>
-                      <IconButton aria-label="share">
-                        <ShareIcon />
-                      </IconButton>
+                      <IconButton aria-label="share">🛒</IconButton>
                       <Button
                         variant="contained"
                         size="small"
                         component={Link}
-                        style={{ fontSize: '0.7125rem', marginLeft: '6.4rem' }}
+                        style={{ fontSize: '0.7125rem', marginLeft: '7.4rem' }}
                         // to={`/collection/${pet.cid}`}
 
                         // "/collection/wallet-address"
                         // className="swap-msg-btn"
                       >
-                        View
+                        $0.99 USD
                       </Button>
                     </CardActions>
                   </Card>
@@ -211,4 +157,4 @@ function SwapList({ account, contractData }) {
   )
 }
 
-export default SwapList
+export default NftTemplates
